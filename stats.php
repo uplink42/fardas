@@ -3,7 +3,7 @@
 <?php
     include ("connect.php");
     $q = mysql_set_charset('utf8');
- 
+    
     $fardas = mysqli_fetch_array(mysqli_query($con, "SELECT SUM(quantidade) AS quant FROM users_has_roupas"), MYSQLI_ASSOC) or die (mysqli_error($con));
     $fardas_total = $fardas['quant'];
     
@@ -32,10 +32,9 @@
     echo "<tr><td>" . "<b>Total</b>" . "</td><td align = 'center'>" . $fardas_total . "</td></tr>";
   ?>
     </table>
-    <br>Fardas em uso por hotel:
-     <table border = '1'><tr><th> Hotel </th><th> Fardas em uso </th></tr>
+    
         <?php
-  
+        //estes queries usam parâmetros específicos para a instituição em questão.
         $fardas_rs = mysqli_query($con, "SELECT SUM(users_has_roupas.quantidade) AS quant_hotel, departamentos.nome "
                 . "FROM users_has_roupas "
                 . "LEFT JOIN users "
@@ -54,10 +53,5 @@
         $fardas_sg_count = mysqli_fetch_array($fardas_sg);
         $fardas_sg_str = $fardas_sg_count['quant_hotel']; if ($fardas_sg_str == "") { $fardas_sg_str = 0;} 
         
-        
-        echo "<tr><td>" . "Royal Savoy" . "</td><td align = 'center'>" . $fardas_rs_str . "</td></tr>";
-        echo "<tr><td>" . "Savoy Gardens" . "</td><td align = 'center'>" . $fardas_sg_str . "</td></tr>";
-    echo "</table>";
-    
-    
+        ?>
         
