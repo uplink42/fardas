@@ -14,7 +14,7 @@ Mysql 5.5 ou superior
 #Instalação
 
 1. Importar a BD (fardas.sql) para o servidor MySQL
-2. Alterar os parâmetros de ligração à BD (connect.php)
+2. Alterar as credenciais de ligação à BD (connect.php)
 3. Criar os departamentos necessários no lado da BD (tabela departamentos)
 
 De seguida pode-se proceder à utilização normal.
