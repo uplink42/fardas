@@ -1,6 +1,6 @@
 <?php
- $username = "uplink";
- $password = "93y977r9h8";
+ $username = "";
+ $password = "";
  $hostname = "localhost";
  $database = "fardas";
  
