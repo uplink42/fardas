@@ -2,7 +2,7 @@
 Gestão de RH's, entrega e devolução de fardamentos de empregados
 
 Este pequeno projecto foi desenvolvido para facilitar a gestão de entrega e devolução de fardas num domínio de hotelaria.
-É possível criar departamentos e atribuir trabalhadores, bem como os fardamentos a usar por cada um. Podemos facilmente registar as entregas e devoluções, mantendo um overview geral do que está em falta por hotel ou departamento, bem como um registo detalhado de todas as transacções.
+É possível criar departamentos e atribuir trabalhadores, bem como os fardamentos a usar por cada um. Podemos facilmente registar as entregas e devoluções, mantendo um overview geral do que está em falta por hotel ou departamento, bem como um registo detalhado de todas as transacções. É de fácil utilização mesmo por utilizadores inexperientes.
 Corre em qualquer servidor windows ou linux. 
 
 #Dependências
